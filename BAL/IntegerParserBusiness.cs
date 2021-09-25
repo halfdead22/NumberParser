@@ -51,7 +51,7 @@ namespace BAL
 
         private FileType getFileType(string fileType)
         {
-            if (fileType == "xnl")
+            if (fileType == "xml")
                 return FileType.Xml;
             else if (fileType == "json")
                 return FileType.Json;
