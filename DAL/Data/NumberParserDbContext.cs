@@ -12,12 +12,6 @@ namespace DAL.Data
         public DbSet<InputOutputResult> InputOutputResult { get; set; }
         public DbSet<FileType> FileType { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    //this connection string can be configured from appsetting.json file
-        //    optionsBuilder.UseSqlServer("server=localhost;Database=NumberParserDb;Trusted_Connection=True;MultipleActiveResultSets=true;");
-        //}
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             IConfigurationBuilder configBuilder = new ConfigurationBuilder().AddJsonFile("appSettings.json");

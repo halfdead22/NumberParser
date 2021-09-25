@@ -22,7 +22,7 @@ namespace BAL
             try
             {
                 InputOutputResultModel inputOutputResult = new InputOutputResultModel();
-                if (_fileOperation.WriteToSpecifiedFile(inputData.integerArray, inputData.Filetype))
+                if (_fileOperation.WriteToSpecifiedFile(sortArrayInDescending(inputData.integerArray), inputData.Filetype))
                 {
                     inputOutputResult.OutputTime = DateTime.Now;
                     inputOutputResult.InputTime = inputData.inputTime;
